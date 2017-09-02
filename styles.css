@@ -1,0 +1,263 @@
+/***************
+//HEADER-------
+***************/
+header{
+    background-color: black;
+    background-image: url('img/bg.png');
+    background-size: contain;
+    background-repeat: repeat;
+    margin-bottom: 0;
+}
+header div.background{
+    background-color: rgba(92,184,92,.5);
+}
+/*heading*/
+header h1.display-1{
+    font-family: 'Kaushan Script', cursive;
+    color:rgb(249,249,249);
+    text-align: center;
+    padding: 2% 0 .5% 0;
+    font-size: 5rem;
+    text-shadow: 0px 2px rgb(0,0,0),0px 4px 5px rgba(0,0,0,.7);
+    
+}
+/*container's button*/
+.container-fluid{
+    background-color:red;
+}
+div.button {
+    text-align: center;
+    margin: 1rem 2rem 0 2rem;
+}
+/**button*/
+header button{    
+    font-family: 'Englebert', sans-serif;
+    margin-bottom: 1rem;
+}
+/*styling the button*/
+header .btn-outline-danger{
+    color:rgba(249,249,249,.8);
+    border-color:rgb(217,83,79);
+    border-width: 1.5px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color:rgba(92,184,92,.5);
+    
+}
+/*Header's Modal*/
+.modal-header{
+    background-color:#d9534f;
+    color:white;
+}
+.modal label{
+    font-size:1.5rem;
+}
+/*Form's modal's header*/
+form{
+    font-family: 'Englebert', sans-serif;
+}
+/*****************
+//Content---------
+*****************/
+/*container's playList*/
+div.playListsContainer{
+    
+}
+div.playListsContainer div.playList{
+    font-family: 'Englebert', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(0,0,0,.9);
+    border-bottom: .5px solid rgba(249,249,249,.3);
+    /*transition: all 5s ease-in-out;
+    transition-delay: initial;*/
+}
+/*playList's header*/
+div.playListsContainer div h1{
+    color:#5cb85c;
+    padding: 1rem;
+    font-size: 2rem;
+}
+div.playListsContainer div ul{
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: auto 2rem;
+    padding:0;
+}
+/*elements of the playList. Container's song*/
+div.playListsContainer div ul li{
+    background-color:rgba(0,0,0,.4);
+    color:#5cb85c;
+    padding: 1rem;    
+}
+div.playListsContainer div ul li:first-child{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+div.playListsContainer div ul li:last-child{
+    margin-bottom: .5rem;
+    border-bottom: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/*Span, timer's song*/
+div.playListsContainer div button span{
+    font-size:24px;
+}
+/*song's buttons*/
+div.playListsContainer div div button{
+    border:none;    
+}
+/*container's song's buttons*/
+div.col-xs-4.containerButtons{
+    background-color:transparent;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+/*song's buttons*/
+div.playListsContainer div div button:hover{
+    background-color:transparent;
+}
+/****************/
+/*SONG PART*/
+/*****************/
+div.playListsContainer div ul li{
+    margin-top:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 1px;    
+}
+div.playListsContainer div ul li div button{
+    background-color: transparent;    
+    padding: .1rem .5rem;
+}
+div.playListsContainer div ul li div.DIVbuttonsContainer_1 button{
+    visibility: hidden; 
+}
+div.playListsContainer div ul li:hover{
+     background-color:rgba(0,0,0,.1);
+}
+div.playListsContainer div ul li:hover div.DIVbuttonsContainer_1 button{  
+    visibility: visible;
+}
+div.playListsContainer div ul li div.DIVbuttonsContainer_1{/*first div of buttons[play-pause-close]*/
+    margin: auto;
+}
+div.playListsContainer div ul li div.DIVbuttonsContainer_1 span{
+    font-size: 26px;    
+}
+/********************/
+/*ARROW BUTTONS*/
+/*******************/
+div.playListsContainer div ul li div.DIVbuttonsContainer_DOWN {
+   margin-left: auto;
+}
+
+div.playListsContainer div ul li div.DIVbuttonsContainer_DOWN button span, div.playListsContainer div ul li div.DIVbuttonsContainer_UP button span{
+    transform:scale(1);
+    transition: transform .5s ease;
+}
+div.playListsContainer div ul li div.DIVbuttonsContainer_DOWN button:hover span, div.playListsContainer div ul li div.DIVbuttonsContainer_UP button:hover{
+    transform:scale(1.2);
+}
+div.playListsContainer div ul li div.DIVbuttonsContainer_UP button{
+    border-radius: 0;
+}
+div.playListsContainer div ul li:last-child div.DIVbuttonsContainer_DOWN button{
+    color: rgba(0,0,0,.5);
+}
+div.playListsContainer div ul li:first-child div.DIVbuttonsContainer_UP button{
+    color: rgba(0,0,0,.5);
+}
+div.playListsContainer div ul li div.DIVbuttonsContainer_UP button:hover{
+    border-top: none;
+}
+div.playListsContainer div ul li div.DIVbuttonsContainer_UP{
+    margin-right: auto;
+}
+/***********************/
+/*PLAY_STOP_CLOSE*/
+/**********************/
+div.playListsContainer div ul li div.DIVinfoContainer{   
+    width: 80%;
+    margin: 0 10%;
+}
+div.playListsContainer div ul li div.DIVinfoContainer div.DIVsongTimer{
+    margin-left: auto;
+}
+div.playListsContainer div ul li div.DIVinfoContainer div.DIVsongTimer span{
+    font-size:18px;
+    color:rgb(249,249,249);
+}
+div.playListsContainer div ul li div a.songTitle{
+    color:rgb(249,249,249);
+    font-size: 24px;
+    text-decoration: none;
+}
+div.playListsContainer div ul li div a.songArtAlb{
+    color:rgb(92,184,92);
+    font-size: 16px;
+    font-style: italic;
+    margin-top: .5rem;
+    margin-left: .8rem;
+    
+}
+
+
+
+@media (max-width: 550px) { 
+    header h1.display-1{
+    font-family: 'Kaushan Script', cursive;
+    color:rgb(249,249,249);
+    text-align: center;
+    padding: 2% 0 .5% 0;
+    font-size: 3rem;
+    text-shadow: 0px 2px rgb(0,0,0),0px 4px 5px rgba(0,0,0,.7);
+    
+}
+    header .btn-outline-danger{
+    font-size: 1rem;
+        padding: .3rem;
+    
+}
+    div.playListsContainer div h1{
+    padding: .5rem;
+    font-size: 24px;
+}
+    
+    div.playListsContainer div button span{
+    font-size:16px;
+}
+    
+    div.playListsContainer div ul li div a.songTitle{
+    color:rgb(249,249,249);
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+}
+    
+    div.playListsContainer div ul li div a.songArtAlb{
+    color:rgb(92,184,92);
+    font-size: 14px;
+    font-style: italic;
+    margin-left: .8rem;
+    width: 100%;
+    
+}
+
+
+}
+@media (max-width: 400px){
+    
+    div.playListsContainer div ul li div.DIVinfoContainer div.DIVsongTimer{
+    display: none;
+}
+}
+
+
+
+
